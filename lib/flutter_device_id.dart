@@ -8,7 +8,7 @@ class FlutterDeviceId {
     _platform = platform;
   }
 
-  static Future<String?> getAndroidId() {
-    return _platform.getAndroidId();
+  static Future<String?> getDeviceId() {
+    return _platform.getDeviceId();
   }
 }

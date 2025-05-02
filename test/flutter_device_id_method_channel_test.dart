@@ -24,8 +24,8 @@ void main() {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(channel, null);
   });
 
-  test('getAndroidId returns mocked value', () async {
-    final androidId = await platform.getAndroidId();
+  test('getDeviceId returns mocked value', () async {
+    final androidId = await platform.getDeviceId();
     expect(androidId, 'mocked-android-id-42');
   });
 }

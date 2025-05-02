@@ -10,8 +10,8 @@ class MethodChannelFlutterDeviceId extends FlutterDeviceIdPlatform {
   final methodChannel = const MethodChannel('flutter_device_id');
 
   @override
-  Future<String?> getAndroidId() async {
-    final version = await methodChannel.invokeMethod<String>('getAndroidId');
+  Future<String?> getDeviceId() async {
+    final version = await methodChannel.invokeMethod<String>('getDeviceId');
     return version;
   }
 }

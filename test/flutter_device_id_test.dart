@@ -9,7 +9,7 @@ class MockFlutterDeviceIdPlatform
     implements FlutterDeviceIdPlatform {
 
   @override
-  Future<String?> getAndroidId() => Future.value('mocked-id-123');
+  Future<String?> getDeviceId() => Future.value('mocked-id-123');
 }
 
 void main() {
@@ -23,7 +23,7 @@ void main() {
     MockFlutterDeviceIdPlatform fakePlatform = MockFlutterDeviceIdPlatform();
     FlutterDeviceIdPlatform.instance = fakePlatform;
 
-    final id = await FlutterDeviceId.getAndroidId();
+    final id = await FlutterDeviceId.getDeviceId();
     expect(id, 'mocked-id-123');
   });
 }
