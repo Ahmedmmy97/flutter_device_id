@@ -17,7 +17,7 @@ class FlutterDeviceIdPlugin: FlutterPlugin, MethodChannel.MethodCallHandler {
   }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: MethodChannel.Result) {
-    if (call.method == "getAndroidId") {
+    if (call.method == "getDeviceId") {
       val androidId = Settings.Secure.getString(context.contentResolver, Settings.Secure.ANDROID_ID)
       result.success(androidId)
     } else {
