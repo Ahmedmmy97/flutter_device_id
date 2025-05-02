@@ -1,16 +1,15 @@
 # flutter_device_id_example
 
-Demonstrates how to use the flutter_device_id plugin.
+Demonstrates how to use the flutter_device_id plugin to get the device ID.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```dart
+import 'package:flutter_device_id/flutter_device_id.dart';
 
-A few resources to get you started if this is your first Flutter project:
+Future<void> getDeviceId() async {
+  String? deviceId = await FlutterDeviceId.getDeviceId();
+  print('Device ID: $deviceId');
+}
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
