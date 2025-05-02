@@ -9,9 +9,10 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 A Flutter plugin to retrieve a unique device identifier on iOS devices, useful for analytics, user tracking, and device management.
                        DESC
-  s.license          = { :file => '../LICENSE' }
+  s.homepage         = 'https://github.com/ahmedmmy97/flutter_device_id'
+  s.license          = { :type => 'MIT', :file => '../LICENSE' }
   s.author           = { 'Ahmed Yousef' => 'ahmedmmy97@gmail.com' }
-  s.source           = { :path => '.' }
+  s.source           = { :http => 'https://github.com/ahmedmmy97/flutter_device_id/archive/refs/tags/v0.0.1.zip' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
   s.platform = :ios, '12.0'
