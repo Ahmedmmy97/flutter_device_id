@@ -1,4 +1,4 @@
-group = "com.example.flutter_device_id"
+group = "com.fdnsoft.flutter_device_id"
 version = "1.0-SNAPSHOT"
 
 buildscript {
@@ -25,7 +25,7 @@ apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
 
 android {
-    namespace = "com.example.flutter_device_id"
+    namespace = "com.fdnsoft.flutter_device_id"
 
     compileSdk = 35
 

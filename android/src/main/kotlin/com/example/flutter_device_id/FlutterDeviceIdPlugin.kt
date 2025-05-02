@@ -1,4 +1,4 @@
-package com.example.flutter_device_id
+package com.fdnsoft.flutter_device_id
 
 import android.provider.Settings
 import androidx.annotation.NonNull
